@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostila de Informática - 12 Aulas</title>
+    <link href="./Apostila de Informática - modulo manutenção_files/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .section-title {
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .lesson-badge {
+            background: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+        }
+        .container {
+            max-width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="http://127.0.0.1:5500/index.html#">📚 Apostila de Informática</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://127.0.0.1:5500/index.html#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Aulas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html#aula1">Aula 1: Introdução</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html#aula2">Aula 2: Componentes Internos</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html#aula3">Aula 3: Periféricos</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html#aula4">Aula 4: Armazenamento</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html#aula5">Aula 5: Montagem Parte 1</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html#aula6">Aula 6: Montagem Parte 2</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html#aula7">Aula 7: BIOS e UEFI</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html#aula8">Aula 8: Instalação Windows</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html#aula9">Aula 9: Drivers</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html#aula10">Aula 10: Manutenção</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html#aula11">Aula 11: Diagnóstico</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html#aula12">Aula 12: Segurança</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Apostila de Informática</h1>
+            <p class="lead">Curso completo de 12 aulas para iniciantes em computação</p>
+            <img src="./Apostila de Informática - modulo manutenção_files/photo-1587831990711-23ca6441447b" alt="Computador Gamer com Componentes Visíveis" class="img-fluid rounded shadow mt-4" style="max-height: 400px; object-fit: cover;">
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <section id="aula1" class="mb-5">
+            <h2 class="section-title"><span class="lesson-badge">Aula 1</span> Introdução ao Computador</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>O que é um Computador?</h3>
+                    <p>Um computador é uma máquina eletrônica que processa dados seguindo instruções específicas. Ele é composto por hardware (partes físicas) e software (programas).</p>
+                    <h4>História Breve</h4>
+                    <ul>
+                        <li>1940s: Primeiros computadores (ENIAC)</li>
+                        <li>1970s: Computadores pessoais (Apple I)</li>
+                        <li>1980s: IBM PC revoluciona o mercado</li>
+                        <li>1990s: Internet populariza o uso</li>
+                        <li>2000s: Laptops e dispositivos móveis</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>Tipos de Computadores</h4>
+                    <ul>
+                        <li><strong>Desktop:</strong> Computadores de mesa para uso geral</li>
+                        <li><strong>Laptop:</strong> Portáteis para mobilidade</li>
+                        <li><strong>Servidor:</strong> Para redes e aplicações empresariais</li>
+                        <li><strong>Workstation:</strong> Para trabalhos profissionais pesados</li>
+                    </ul>
+                    
+                    <h4>Evolução dos Processadores</h4>
+                    <ul>
+                        <li><strong>8086 (1978):</strong> 16 bits, 5-10 MHz</li>
+                        <li><strong>Pentium (1993):</strong> 32 bits, 60-200 MHz</li>
+                        <li><strong>Core 2 Duo (2006):</strong> Dual-core, 1.8-3.0 GHz</li>
+                        <li><strong>Core i7 (2008):</strong> Quad-core, hyperthreading</li>
+                        <li><strong>Ryzen (2017):</strong> Até 16 cores, arquitetura Zen</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Anatomia de um Computador -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <h3>Anatomia de um Computador</h3>
+                    <div class="text-center">
+                        <svg width="100%" height="400" viewBox="0 0 800 400" class="border rounded bg-light" style="max-width: 800px;">
+                            <!-- Gabinete -->
+                            <rect x="50" y="50" width="300" height="300" fill="#e9ecef" stroke="#6c757d" stroke-width="2"></rect>
+                            <text x="200" y="40" text-anchor="middle" font-size="14" font-weight="bold">Gabinete</text>
+                            
+                            <!-- Placa-mãe -->
+                            <rect x="70" y="70" width="260" height="180" fill="#28a745" stroke="#155724" stroke-width="2"></rect>
+                            <text x="200" y="90" text-anchor="middle" font-size="12" fill="white">Placa-mãe</text>
+                            
+                            <!-- CPU -->
+                            <rect x="90" y="100" width="60" height="60" fill="#dc3545" stroke="#721c24" stroke-width="2"></rect>
+                            <text x="120" y="135" text-anchor="middle" font-size="10" fill="white">CPU</text>
+                            
+                            <!-- RAM -->
+                            <rect x="170" y="100" width="20" height="80" fill="#007bff" stroke="#004085" stroke-width="2"></rect>
+                            <rect x="200" y="100" width="20" height="80" fill="#007bff" stroke="#004085" stroke-width="2"></rect>
+                            <text x="205" y="195" text-anchor="middle" font-size="10">RAM</text>
+                            
+                            <!-- HD/SSD -->
+                            <rect x="250" y="200" width="70" height="40" fill="#6f42c1" stroke="#3d1a78" stroke-width="2"></rect>
+                            <text x="285" y="225" text-anchor="middle" font-size="10" fill="white">HD/SSD</text>
+                            
+                            <!-- Fonte -->
+                            <rect x="70" y="270" width="80" height="60" fill="#fd7e14" stroke="#8a4a00" stroke-width="2"></rect>
+                            <text x="110" y="305" text-anchor="middle" font-size="10" fill="white">Fonte</text>
+                            
+                            <!-- Monitor -->
+                            <rect x="450" y="80" width="200" height="150" fill="#17a2b8" stroke="#0c5460" stroke-width="2"></rect>
+                            <rect x="460" y="90" width="180" height="120" fill="#000" stroke="#333" stroke-width="1"></rect>
+                            <text x="550" y="250" text-anchor="middle" font-size="12">Monitor</text>
+                            
+                            <!-- Teclado -->
+                            <rect x="450" y="280" width="150" height="40" fill="#6c757d" stroke="#495057" stroke-width="2"></rect>
+                            <text x="525" y="305" text-anchor="middle" font-size="12" fill="white">Teclado</text>
+                            
+                            <!-- Mouse -->
+                            <ellipse cx="650" cy="300" rx="30" ry="20" fill="#6c757d" stroke="#495057" stroke-width="2"></ellipse>
+                            <text x="650" y="340" text-anchor="middle" font-size="12">Mouse</text>
+                            
+                            <!-- Conexões -->
+                            <line x1="350" y1="200" x2="450" y2="155" stroke="#ffc107" stroke-width="3"></line>
+                            <text x="400" y="175" text-anchor="middle" font-size="10">HDMI/VGA</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Exercícios Aula 1 -->
+            <div class="mt-5">
+                <h3>🎯 Exercícios Práticos - Aula 1</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Exercício 1: Identificação do Equipamento</h5>
+                                <ol>
+                                    <li>Identifique o tipo do seu computador (Desktop/Laptop/All-in-One)</li>
+                                    <li>Conte quantas portas USB você consegue ver</li>
+                                    <li>Localize a entrada para fones de ouvido</li>
+                                    <li>Identifique o tipo de conexão do monitor (HDMI/VGA/DisplayPort)</li>
+                                    <li>Anote a marca e modelo do equipamento</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Exercício 2: Pesquisa Histórica</h5>
+                                <ol>
+                                    <li>Pesquise quando foi lançado o primeiro IBM PC</li>
+                                    <li>Descubra qual foi o primeiro computador da sua família</li>
+                                    <li>Investigue quando surgiu o primeiro processador Intel</li>
+                                    <li>Pesquise sobre o computador ENIAC e suas características</li>
+                                    <li>Descubra quando foi criado o primeiro mouse de computador</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Exercício 3: Exploração do Sistema</h5>
+                                <ol>
+                                    <li>Abra o "Sobre" do Windows (Configurações &gt; Sistema &gt; Sobre)</li>
+                                    <li>Anote o nome do processador</li>
+                                    <li>Verifique a quantidade de RAM instalada</li>
+                                    <li>Identifique a versão do Windows</li>
+                                    <li>Anote o tipo de sistema (32 ou 64 bits)</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Exercício 4: Comparação de Dispositivos</h5>
+                                <ol>
+                                    <li>Compare seu computador com um smartphone: semelhanças e diferenças</li>
+                                    <li>Liste 3 vantagens de um desktop sobre um laptop</li>
+                                    <li>Liste 3 vantagens de um laptop sobre um desktop</li>
+                                    <li>Pesquise o preço de um computador similar ao seu</li>
+                                    <li>Identifique para que tipo de uso seu PC é mais adequado</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Exercício 5: Terminologia Técnica</h5>
+                                <ol>
+                                    <li>Defina com suas palavras: Hardware</li>
+                                    <li>Defina com suas palavras: Software</li>
+                                    <li>Dê 5 exemplos de hardware</li>
+                                    <li>Dê 5 exemplos de software</li>
+                                    <li>Explique a diferença entre sistema operacional e aplicativo</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Exercício 6: Observação Prática</h5>
+                                <ol>
+                                    <li>Observe e desenhe (ou descreva) a disposição das portas do seu PC</li>
+                                    <li>Identifique quais dispositivos estão conectados agora</li>
+                                    <li>Teste desconectar e reconectar um dispositivo USB</li>
+                                    <li>Observe o que acontece na tela quando você faz isso</li>
+                                    <li>Anote os sons que o computador faz durante a operação</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-info mt-3">
+                    <h5>💡 Dicas para os Exercícios</h5>
+                    <ul class="mb-0">
+                        <li>Use um caderno para anotar todas as respostas</li>
+                        <li>Tire fotos dos componentes para consulta futura</li>
+                        <li>Não tenha medo de explorar as configurações do sistema</li>
+                        <li>Pesquise termos desconhecidos na internet</li>
+                        <li>Compartilhe suas descobertas com colegas ou familiares</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="aula2" class="mb-5">
+            <h2 class="section-title"><span class="lesson-badge">Aula 2</span> Componentes Internos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">🔧 CPU (Processador)</h5>
+                            <p>O "cérebro" do computador que executa instruções.</p>
+                            <ul>
+                                <li>Núcleos: Mais núcleos = melhor multitarefa</li>
+                                <li>Frequência: Medida em GHz</li>
+                                <li>Cache: Memória ultra-rápida interna</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">💾 Memória RAM</h5>
+                            <p>Armazena dados temporariamente para acesso rápido.</p>
+                            <ul>
+                                <li>DDR4/DDR5: Tipos mais modernos</li>
+                                <li>Capacidade: 8GB, 16GB, 32GB+</li>
+                                <li>Velocidade: Medida em MHz</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">🔌 Placa-mãe</h5>
+                            <p>Conecta todos os componentes do computador.</p>
+                            <ul>
+                                <li>Socket: Tipo de processador suportado</li>
+                                <li>Slots: Para RAM, placas de expansão</li>
+                                <li>Conectores: SATA, USB, áudio</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Componentes Adicionais -->
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">💾 Armazenamento</h5>
+                            <ul>
+                                <li><strong>HD:</strong> 500GB-18TB, mecânico</li>
+                                <li><strong>SSD:</strong> 120GB-8TB, flash</li>
+                                <li><strong>NVMe:</strong> Ultra-rápido, M.2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">🎨 Placa de Vídeo</h5>
+                            <ul>
+                                <li><strong>Integrada:</strong> No processador</li>
+                                <li><strong>Dedicada:</strong> NVIDIA/AMD</li>
+                                <li><strong>VRAM:</strong> 4GB-24GB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">⚡ Fonte de Alimentação</h5>
+                            <ul>
+                                <li><strong>Potência:</strong> 400W-1200W</li>
+                                <li><strong>Eficiência:</strong> 80+ Bronze/Gold</li>
+                                <li><strong>Modular:</strong> Cabos removíveis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">🌡️ Resfriamento</h5>
+                            <ul>
+                                <li><strong>Air Cooler:</strong> Ventoinhas e dissipador</li>
+                                <li><strong>Water Cooler:</strong> Líquido refrigerante</li>
+                                <li><strong>Pasta Térmica:</strong> Transferência de calor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Exercícios Aula 2 -->
+            <div class="mt-5">
+                <h3>🎯 Exercícios Práticos - Aula 2</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Exercício 1: Identificação de Especificações</h5>
+                                <ol>
+                                    <li>Pressione <kbd>Windows + R</kbd>, digite <code>dxdiag</code></li>
+                                    <li>Anote o modelo exato do processador</li>
+                                    <li>Anote a velocidade (frequência) do processador</li>
+                                    <li>Verifique a quantidade total de RAM</li>
+                                    <li>Vá na aba "Exibir" e anote o modelo da placa de vídeo</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Exercício 2: Gerenciador de Tarefas</h5>
+                                <ol>
+                                    <li>Pressione <kbd>Ctrl + Shift + Esc</kbd> para abrir o Task Manager</li>
+                                    <li>Vá na aba "Performance"</li>
+                                    <li>Clique em "CPU" e anote quantos núcleos seu processador tem</li>
+                                    <li>Clique em "Memória" e veja quanto está sendo usado</li>
+                                    <li>Observe o gráfico de uso da CPU por 2 minutos</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Exercício 3: Pesquisa de Compatibilidade</h5>
+                                <ol>
+                                    <li>Pesquise o socket do seu processador</li>
+                                    <li>Descubra que tipo de RAM seu PC usa (DDR4/DDR5)</li>
+                                    <li>Verifique a velocidade máxima de RAM suportada</li>
+                                    <li>Pesquise quantos slots de RAM sua placa-mãe tem</li>
+                                    <li>Descubra a capacidade máxima de RAM suportada</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Exercício 4: Comparação de Processadores</h5>
+                                <ol>
+                                    <li>Pesquise as especificações do seu processador</li>
+                                    <li>Compare com um processador mais novo da mesma marca</li>
+                                    <li>Compare com um processador da marca concorrente</li>
+                                    <li>Anote as diferenças de núcleos, frequência e cache</li>
+                                    <li>Pesquise benchmarks comparativos online</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Exercício 5: Exploração da Placa-mãe</h5>
+                                <ol>
+                                    <li>Descubra o modelo da sua placa-mãe (use CPU-Z se necessário)</li>
+                                    <li>Pesquise o manual da placa-mãe online</li>
+                                    <li>Identifique quantos slots PCIe ela possui</li>
+                                    <li>Verifique quantas portas SATA estão disponíveis</li>
+                                    <li>Anote quais conectores de energia ela precisa</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Exercício 6: Monitoramento de Hardware</h5>
+                                <ol>
+                                    <li>Baixe e instale o HWiNFO64 (versão gratuita)</li>
+                                    <li>Execute o programa e explore as informações</li>
+                                    <li>Anote as temperaturas atuais da CPU</li>
+                                    <li>Verifique a velocidade das ventoinhas</li>
+                                    <li>Observe as voltagens dos componentes</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-warning mt-3">
+                    <h5>⚠️ Importante</h5>
+                    <p class="mb-0">Ao baixar softwares, sempre use sites oficiais. Cuidado com programas que prometem "acelerar" o PC - muitos são malware disfarçados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="aula3" class="mb-5">
+            <h2 class="section-title"><span class="lesson-badge">Aula 3</span> Periféricos e Dispositivos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Dispositivos de Entrada</h3>
+                    <ul>
+                        <li><strong>⌨️ Teclado:</strong> Mecânico, membrana, sem fio</li>
+                        <li><strong>🖱️ Mouse:</strong> Óptico, laser, gaming</li>
+                        <li><strong>🎤 Microfone:</strong> Para áudio e comunicação</li>
+                        <li><strong>📷 Webcam:</strong> Para videoconferências</li>
+                    </ul>
+                    <h3>Dispositivos de Saída</h3>
+                    <ul>
+                        <li><strong>🖥️ Monitor:</strong> LCD, LED, OLED</li>
+                        <li><strong>🖨️ Impressora:</strong> Jato de tinta, laser</li>
+                        <li><strong>🔊 Caixas de Som:</strong> 2.0, 2.1, 5.1</li>
+                        <li><strong>🎧 Fones de Ouvido:</strong> Com ou sem fio</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Conectividade</h3>
+                    <ul>
+                        <li><strong>USB:</strong> 2.0, 3.0, 3.1, USB-C</li>
+                        <li><strong>HDMI:</strong> Para vídeo e áudio</li>
+                        <li><strong>Bluetooth:</strong> Conexão sem fio</li>
+                        <li><strong>Wi-Fi:</strong> Internet sem fio</li>
+                        <li><strong>Ethernet:</strong> Rede cabeada</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Exercícios Aula 3 -->
+            <div class="mt-5">
+                <h3>🎯 Exercícios Práticos - Aula 3</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 1: Inventário de Periféricos</h5>
+                                <ol>
+                                    <li>Liste todos dispositivos de entrada conectados</li>
+                                    <li>Liste todos dispositivos de saída conectados</li>
+                                    <li>Identifique tipo de conexão de cada um</li>
+                                    <li>Anote marca e modelo dos periféricos</li>
+                                    <li>Teste desconectar e reconectar um USB</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 2: Teste de Conectores</h5>
+                                <ol>
+                                    <li>Conte portas USB 2.0 (pretas) e 3.0+ (azuis)</li>
+                                    <li>Identifique saídas de vídeo disponíveis</li>
+                                    <li>Localize entrada para fones de ouvido</li>
+                                    <li>Verifique se há porta Ethernet</li>
+                                    <li>Teste velocidade de transferência USB</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 3: Configuração de Dispositivos</h5>
+                                <ol>
+                                    <li>Vá em Configurações &gt; Dispositivos</li>
+                                    <li>Ajuste velocidade do cursor do mouse</li>
+                                    <li>Configure idioma do teclado</li>
+                                    <li>Teste configurações de áudio</li>
+                                    <li>Verifique dispositivos Bluetooth</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 4: Teste de Áudio e Vídeo</h5>
+                                <ol>
+                                    <li>Teste alto-falantes e fones de ouvido</li>
+                                    <li>Configure níveis de volume</li>
+                                    <li>Teste microfone (se disponível)</li>
+                                    <li>Conecte monitor externo (se possível)</li>
+                                    <li>Teste diferentes resoluções de tela</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 5: Conectividade de Rede</h5>
+                                <ol>
+                                    <li>Verifique Wi-Fi integrado</li>
+                                    <li>Teste velocidade Wi-Fi vs Ethernet</li>
+                                    <li>Configure rede sem fio</li>
+                                    <li>Teste pareamento Bluetooth</li>
+                                    <li>Verifique qualidade do sinal</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 6: Pesquisa de Upgrades</h5>
+                                <ol>
+                                    <li>Compare preços mouse gamer vs básico</li>
+                                    <li>Pesquise teclados mecânicos vs membrana</li>
+                                    <li>Investigue monitores 4K vs Full HD</li>
+                                    <li>Compare fones com cancelamento de ruído</li>
+                                    <li>Faça lista de desejos com preços</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aula4" class="mb-5">
+            <h2 class="section-title"><span class="lesson-badge">Aula 4</span> Armazenamento de Dados</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">💿 HD (Hard Disk)</h5>
+                            <p>Armazenamento magnético tradicional.</p>
+                            <ul>
+                                <li>Capacidade: 500GB a 18TB</li>
+                                <li>Velocidade: 5400-7200 RPM</li>
+                                <li>Vantagens: Baixo custo</li>
+                                <li>Desvantagens: Lento, frágil</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">⚡ SSD</h5>
+                            <p>Armazenamento em memória flash.</p>
+                            <ul>
+                                <li>Capacidade: 120GB a 8TB</li>
+                                <li>Velocidade: 500-7000 MB/s</li>
+                                <li>Vantagens: Muito rápido</li>
+                                <li>Desvantagens: Mais caro</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">🚀 NVMe M.2</h5>
+                            <p>SSD ultra-rápido conectado diretamente à placa-mãe.</p>
+                            <ul>
+                                <li>Capacidade: 250GB a 4TB</li>
+                                <li>Velocidade: Até 7000 MB/s</li>
+                                <li>Vantagens: Extremamente rápido</li>
+                                <li>Desvantagens: Mais caro, aquece</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Exercícios Aula 4 -->
+            <div class="mt-5">
+                <h3>🎯 Exercícios Práticos - Aula 4</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 1: Análise do Armazenamento</h5>
+                                <ol>
+                                    <li>Abra "Este Computador" e anote capacidades</li>
+                                    <li>Vá em Gerenciador de Disco (diskmgmt.msc)</li>
+                                    <li>Identifique quantos discos físicos existem</li>
+                                    <li>Anote o tipo de cada disco (HD/SSD)</li>
+                                    <li>Verifique espaço livre em cada partição</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 2: Teste de Velocidade</h5>
+                                <ol>
+                                    <li>Baixe e instale CrystalDiskMark</li>
+                                    <li>Execute teste em todos os discos</li>
+                                    <li>Anote velocidades de leitura sequencial</li>
+                                    <li>Anote velocidades de escrita sequencial</li>
+                                    <li>Compare com especificações do fabricante</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 3: Saúde dos Discos</h5>
+                                <ol>
+                                    <li>Baixe e instale CrystalDiskInfo</li>
+                                    <li>Verifique status de saúde de cada disco</li>
+                                    <li>Anote temperatura atual dos discos</li>
+                                    <li>Verifique horas de funcionamento</li>
+                                    <li>Anote setores realocados (se houver)</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 4: Planejamento de Upgrade</h5>
+                                <ol>
+                                    <li>Pesquise preços de SSDs de 500GB e 1TB</li>
+                                    <li>Compare preços SSD SATA vs NVMe</li>
+                                    <li>Verifique se sua placa-mãe tem slot M.2</li>
+                                    <li>Calcule custo por GB de diferentes opções</li>
+                                    <li>Faça um plano de upgrade com orçamento</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 5: Organização de Dados</h5>
+                                <ol>
+                                    <li>Analise que tipos de arquivos ocupam mais espaço</li>
+                                    <li>Use Limpeza de Disco para liberar espaço</li>
+                                    <li>Identifique arquivos grandes desnecessários</li>
+                                    <li>Organize dados por frequência de uso</li>
+                                    <li>Planeje estratégia SSD + HD</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 6: Performance Prática</h5>
+                                <ol>
+                                    <li>Meça tempo de boot do Windows</li>
+                                    <li>Teste abertura de programas pesados</li>
+                                    <li>Copie arquivo grande e meça velocidade</li>
+                                    <li>Compare performance entre discos</li>
+                                    <li>Documente diferenças observadas</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aula5" class="mb-5">
+            <h2 class="section-title"><span class="lesson-badge">Aula 5</span> Montagem - Parte 1</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Preparação e Ferramentas</h3>
+                    <ol>
+                        <li>Prepare o local: Superfície antiestática</li>
+                        <li>Ferramentas: Chaves Phillips, pulseira antiestática</li>
+                        <li>Instale a fonte no gabinete</li>
+                        <li>Prepare a placa-mãe fora do gabinete</li>
+                        <li>Instale CPU, RAM e cooler</li>
+                    </ol>
+                </div>
+                <div class="col-md-4">
+                    <div class="alert alert-warning">
+                        <h5>⚠️ Cuidados Importantes</h5>
+                        <ul class="mb-0">
+                            <li>Sempre desligue da tomada</li>
+                            <li>Use pulseira antiestática</li>
+                            <li>Não force componentes</li>
+                            <li>Leia manuais antes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Exercícios Aula 5 -->
+            <div class="mt-5">
+                <h3>🎯 Exercícios Práticos - Aula 5</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 1: Lista de Ferramentas</h5>
+                                <ol>
+                                    <li>Liste todas ferramentas necessárias</li>
+                                    <li>Pesquise preços de um kit básico</li>
+                                    <li>Identifique onde comprar localmente</li>
+                                    <li>Verifique se tem as ferramentas em casa</li>
+                                    <li>Faça orçamento completo</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 2: Planejamento de Montagem</h5>
+                                <ol>
+                                    <li>Assista 3 vídeos de montagem no YouTube</li>
+                                    <li>Anote ordem de instalação dos componentes</li>
+                                    <li>Identifique erros comuns mencionados</li>
+                                    <li>Liste dicas importantes dos vídeos</li>
+                                    <li>Faça um checklist próprio</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 3: Compatibilidade</h5>
+                                <ol>
+                                    <li>Escolha um processador para simulação</li>
+                                    <li>Encontre placa-mãe compatível</li>
+                                    <li>Selecione RAM compatível</li>
+                                    <li>Calcule potência necessária da fonte</li>
+                                    <li>Verifique se tudo cabe no gabinete</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 4: Orçamento de PC</h5>
+                                <ol>
+                                    <li>Faça orçamento PC básico (R$ 2000)</li>
+                                    <li>Faça orçamento PC intermediário (R$ 4000)</li>
+                                    <li>Faça orçamento PC gamer (R$ 8000)</li>
+                                    <li>Compare custo-benefício de cada</li>
+                                    <li>Identifique melhor opção para você</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 5: Preparação do Local</h5>
+                                <ol>
+                                    <li>Escolha local adequado para montagem</li>
+                                    <li>Verifique iluminação suficiente</li>
+                                    <li>Organize espaço de trabalho</li>
+                                    <li>Prepare recipientes para parafusos</li>
+                                    <li>Teste pulseira antiestática</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 6: Estudo Teórico</h5>
+                                <ol>
+                                    <li>Leia manual da placa-mãe escolhida</li>
+                                    <li>Estude instalação do cooler da CPU</li>
+                                    <li>Entenda conexões de energia</li>
+                                    <li>Aprenda sobre jumpers e conectores</li>
+                                    <li>Pratique identificação de componentes</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aula6" class="mb-5">
+            <h2 class="section-title"><span class="lesson-badge">Aula 6</span> Montagem - Parte 2</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Instalação Final</h3>
+                    <ol>
+                        <li>Fixe a placa-mãe ao gabinete</li>
+                        <li>Conecte HD/SSD</li>
+                        <li>Instale placa de vídeo</li>
+                        <li>Conecte cabos de energia</li>
+                        <li>Primeiro boot</li>
+                    </ol>
+                </div>
+                <div class="col-md-6">
+                    <h3>Primeiro Boot e Testes</h3>
+                    <ol>
+                        <li>Conecte apenas o essencial primeiro</li>
+                        <li>Teste POST (Power-On Self-Test)</li>
+                        <li>Entre na BIOS/UEFI</li>
+                        <li>Verifique detecção de componentes</li>
+                        <li>Configure ordem de boot</li>
+                        <li>Salve configurações e reinicie</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <!-- Exercícios Aula 6 -->
+            <div class="mt-5">
+                <h3>🎯 Exercícios Práticos - Aula 6</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 1: Simulação de Montagem</h5>
+                                <ol>
+                                    <li>Assista vídeo de montagem completa</li>
+                                    <li>Pause e identifique cada etapa</li>
+                                    <li>Anote ordem de conexão dos cabos</li>
+                                    <li>Identifique conectores de energia</li>
+                                    <li>Pratique com seu PC atual (observação)</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 2: Gerenciamento de Cabos</h5>
+                                <ol>
+                                    <li>Abra seu PC e observe organização atual</li>
+                                    <li>Identifique cabos que podem ser reorganizados</li>
+                                    <li>Verifique fluxo de ar das ventoinhas</li>
+                                    <li>Anote melhorias possíveis</li>
+                                    <li>Pesquise técnicas de cable management</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 3: Teste de BIOS</h5>
+                                <ol>
+                                    <li>Entre na BIOS do seu PC atual</li>
+                                    <li>Explore todas as abas disponíveis</li>
+                                    <li>Anote configurações importantes</li>
+                                    <li>Verifique temperaturas em tempo real</li>
+                                    <li>Teste alterar ordem de boot</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 4: Identificação de Conectores</h5>
+                                <ol>
+                                    <li>Identifique conector ATX 24 pinos</li>
+                                    <li>Localize conector EPS 8 pinos (CPU)</li>
+                                    <li>Encontre conectores PCIe 6+2 pinos</li>
+                                    <li>Identifique conectores SATA</li>
+                                    <li>Localize conectores do painel frontal</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 5: Troubleshooting Básico</h5>
+                                <ol>
+                                    <li>Simule problema: PC não liga</li>
+                                    <li>Liste possíveis causas</li>
+                                    <li>Crie sequencia de testes</li>
+                                    <li>Pratique teste de fonte com clipe</li>
+                                    <li>Aprenda códigos de beep da BIOS</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 6: Documentação</h5>
+                                <ol>
+                                    <li>Fotografe interior do seu PC</li>
+                                    <li>Anote modelo de todos componentes</li>
+                                    <li>Crie diagrama de conexões</li>
+                                    <li>Documente configurações da BIOS</li>
+                                    <li>Faça backup das configurações</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aula7" class="mb-5">
+            <h2 class="section-title"><span class="lesson-badge">Aula 7</span> BIOS e UEFI</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>O que é BIOS/UEFI?</h3>
+                    <p>Firmware que inicializa o hardware antes do sistema operacional.</p>
+                    <h4>Configurações Importantes</h4>
+                    <ul>
+                        <li>Ordem de boot</li>
+                        <li>Configurações de memória</li>
+                        <li>Temperaturas e ventoinhas</li>
+                        <li>Overclock básico</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Configurações Avançadas</h3>
+                    <ul>
+                        <li><strong>XMP/DOCP:</strong> Overclock automático da RAM</li>
+                        <li><strong>Secure Boot:</strong> Segurança de inicialização</li>
+                        <li><strong>TPM:</strong> Módulo de segurança</li>
+                        <li><strong>Virtualization:</strong> Para máquinas virtuais</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Exercícios Aula 7 -->
+            <div class="mt-5">
+                <h3>🎯 Exercícios Práticos - Aula 7</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 1: Exploração da BIOS</h5>
+                                <ol>
+                                    <li>Entre na BIOS (F2, F10, Del durante boot)</li>
+                                    <li>Anote versão da BIOS/UEFI</li>
+                                    <li>Explore todas as abas principais</li>
+                                    <li>Verifique informações do sistema</li>
+                                    <li>Anote temperaturas atuais</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 2: Configuração de Boot</h5>
+                                <ol>
+                                    <li>Acesse configurações de boot</li>
+                                    <li>Anote ordem atual de boot</li>
+                                    <li>Pratique alterar prioridades</li>
+                                    <li>Teste boot por USB (simulação)</li>
+                                    <li>Restaure configurações originais</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 3: Monitoramento</h5>
+                                <ol>
+                                    <li>Verifique temperaturas da CPU</li>
+                                    <li>Monitore velocidades das ventoinhas</li>
+                                    <li>Observe voltagens dos componentes</li>
+                                    <li>Anote valores em idle</li>
+                                    <li>Compare com especificações normais</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 4: Configurações de Memória</h5>
+                                <ol>
+                                    <li>Verifique configurações atuais da RAM</li>
+                                    <li>Anote frequência e timings</li>
+                                    <li>Pesquise sobre perfis XMP/DOCP</li>
+                                    <li>Verifique se XMP está ativo</li>
+                                    <li>Anote capacidade máxima suportada</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 5: Segurança e Recursos</h5>
+                                <ol>
+                                    <li>Verifique status do Secure Boot</li>
+                                    <li>Localize configurações de TPM</li>
+                                    <li>Verifique suporte à virtualização</li>
+                                    <li>Explore opções de energia</li>
+                                    <li>Anote recursos disponíveis</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 6: Backup e Restauração</h5>
+                                <ol>
+                                    <li>Aprenda a salvar perfil da BIOS</li>
+                                    <li>Pratique reset para padrões</li>
+                                    <li>Teste função "Load Optimized Defaults"</li>
+                                    <li>Anote como acessar recovery</li>
+                                    <li>Documente configurações importantes</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aula8" class="mb-5">
+            <h2 class="section-title"><span class="lesson-badge">Aula 8</span> Instalação do Windows</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Processo de Instalação</h3>
+                    <ol>
+                        <li>Baixe a Media Creation Tool</li>
+                        <li>Crie USB bootável com Rufus</li>
+                        <li>Configure BIOS para boot USB</li>
+                        <li>Siga o assistente de instalação</li>
+                        <li>Configure conta e privacidade</li>
+                    </ol>
+                </div>
+                <div class="col-md-4">
+                    <div class="alert alert-warning">
+                        <h5>⚠️ Atenção</h5>
+                        <p class="mb-0">Formatar o disco apaga todos os dados. Sempre faça backup antes!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Exercícios Aula 8 -->
+            <div class="mt-5">
+                <h3>🎯 Exercícios Práticos - Aula 8</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 1: Preparação de Mídia</h5>
+                                <ol>
+                                    <li>Baixe Windows Media Creation Tool</li>
+                                    <li>Baixe e instale Rufus</li>
+                                    <li>Prepare pendrive de 8GB+ (backup dados)</li>
+                                    <li>Crie USB bootável de teste</li>
+                                    <li>Verifique integridade da mídia</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 2: Planejamento de Partições</h5>
+                                <ol>
+                                    <li>Calcule tamanho ideal para sistema (100GB+)</li>
+                                    <li>Planeje partição para dados pessoais</li>
+                                    <li>Considere partição para backup</li>
+                                    <li>Estude esquemas GPT vs MBR</li>
+                                    <li>Desenhe layout de partições ideal</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 3: Simulação de Instalação</h5>
+                                <ol>
+                                    <li>Assista vídeo completo de instalação</li>
+                                    <li>Anote cada etapa do processo</li>
+                                    <li>Identifique opções de personalização</li>
+                                    <li>Estude configurações de privacidade</li>
+                                    <li>Pratique navegação no instalador</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 4: Licenciamento</h5>
+                                <ol>
+                                    <li>Pesquise tipos de licença Windows</li>
+                                    <li>Compare Windows Home vs Pro</li>
+                                    <li>Entenda ativação digital</li>
+                                    <li>Verifique status da sua licença atual</li>
+                                    <li>Anote chave do produto (se visível)</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 5: Backup e Recuperação</h5>
+                                <ol>
+                                    <li>Identifique dados importantes para backup</li>
+                                    <li>Teste ferramentas de backup nativas</li>
+                                    <li>Crie lista de programas a reinstalar</li>
+                                    <li>Anote configurações personalizadas</li>
+                                    <li>Prepare estratégia de recuperação</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 6: Pós-Instalação</h5>
+                                <ol>
+                                    <li>Liste drivers necessários</li>
+                                    <li>Prepare lista de software essencial</li>
+                                    <li>Planeje configurações de segurança</li>
+                                    <li>Anote configurações de rede</li>
+                                    <li>Crie checklist pós-instalação</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aula9" class="mb-5">
+            <h2 class="section-title"><span class="lesson-badge">Aula 9</span> Drivers e Configuração</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>O que são Drivers?</h3>
+                    <p>Programas que permitem ao sistema operacional se comunicar com o hardware.</p>
+                    <h4>Tipos de Drivers</h4>
+                    <ul>
+                        <li><strong>Chipset:</strong> Comunicação básica da placa-mãe</li>
+                        <li><strong>GPU:</strong> Placa de vídeo (NVIDIA/AMD)</li>
+                        <li><strong>Áudio:</strong> Som integrado ou placa dedicada</li>
+                        <li><strong>Rede:</strong> Ethernet e Wi-Fi</li>
+                    </ul>
+                    <h4>Ordem de Instalação</h4>
+                    <ol>
+                        <li>Chipset (sempre primeiro)</li>
+                        <li>Rede (para baixar outros)</li>
+                        <li>GPU (NVIDIA/AMD)</li>
+                        <li>Áudio e periféricos</li>
+                    </ol>
+                </div>
+                <div class="col-md-6">
+                    <h3>Onde Encontrar Drivers</h3>
+                    <ul>
+                        <li><strong>NVIDIA:</strong> nvidia.com/drivers</li>
+                        <li><strong>AMD:</strong> amd.com/support</li>
+                        <li><strong>Intel:</strong> intel.com/support</li>
+                        <li><strong>Placa-mãe:</strong> Site do fabricante</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Exercícios Aula 9 -->
+            <div class="mt-5">
+                <h3>🎯 Exercícios Práticos - Aula 9</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 1: Identificação de Drivers</h5>
+                                <ol>
+                                    <li>Abra Gerenciador de Dispositivos</li>
+                                    <li>Identifique dispositivos com problema</li>
+                                    <li>Anote dispositivos sem driver</li>
+                                    <li>Verifique versões dos drivers instalados</li>
+                                    <li>Liste drivers que precisam atualização</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 2: Download de Drivers</h5>
+                                <ol>
+                                    <li>Identifique modelo da placa-mãe</li>
+                                    <li>Acesse site do fabricante</li>
+                                    <li>Baixe drivers mais recentes</li>
+                                    <li>Organize drivers em pastas</li>
+                                    <li>Crie backup dos drivers atuais</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 3: Instalação Ordenada</h5>
+                                <ol>
+                                    <li>Instale chipset primeiro</li>
+                                    <li>Instale drivers de rede</li>
+                                    <li>Atualize driver da GPU</li>
+                                    <li>Instale drivers de áudio</li>
+                                    <li>Teste funcionamento de cada um</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 4: Ferramentas Automáticas</h5>
+                                <ol>
+                                    <li>Teste Windows Update para drivers</li>
+                                    <li>Experimente GeForce Experience (NVIDIA)</li>
+                                    <li>Teste AMD Software (AMD)</li>
+                                    <li>Compare resultados com instalação manual</li>
+                                    <li>Anote vantagens e desvantagens</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 5: Solução de Problemas</h5>
+                                <ol>
+                                    <li>Simule conflito de driver</li>
+                                    <li>Pratique rollback de driver</li>
+                                    <li>Teste modo de segurança</li>
+                                    <li>Use Restauração do Sistema</li>
+                                    <li>Documente soluções encontradas</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 6: Configuração Pós-Drivers</h5>
+                                <ol>
+                                    <li>Configure painel de controle da GPU</li>
+                                    <li>Ajuste configurações de áudio</li>
+                                    <li>Teste todas as portas USB</li>
+                                    <li>Configure rede Wi-Fi</li>
+                                    <li>Otimize configurações de energia</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aula10" class="mb-5">
+            <h2 class="section-title"><span class="lesson-badge">Aula 10</span> Manutenção Preventiva</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5>🧹 Limpeza Regular</h5>
+                            <ul>
+                                <li>Use ar comprimido</li>
+                                <li>Limpe filtros de poeira</li>
+                                <li>Álcool isopropílico nos contatos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5>🌡️ Monitoramento</h5>
+                            <ul>
+                                <li>CPU: &lt; 60°C idle</li>
+                                <li>GPU: &lt; 80°C carga</li>
+                                <li>Use HWMonitor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5>🔧 Manutenção Anual</h5>
+                            <ul>
+                                <li>Substituição de pasta térmica</li>
+                                <li>Verificação de cabos</li>
+                                <li>Teste de memória RAM</li>
+                                <li>Atualização de BIOS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Exercícios Aula 10 -->
+            <div class="mt-5">
+                <h3>🎯 Exercícios Práticos - Aula 10</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 1: Monitoramento Térmico</h5>
+                                <ol>
+                                    <li>Baixe e instale HWiNFO64</li>
+                                    <li>Monitore temperaturas por 1 hora</li>
+                                    <li>Anote temperaturas máximas</li>
+                                    <li>Teste sob carga (jogo/benchmark)</li>
+                                    <li>Compare com limites seguros</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 2: Limpeza Física</h5>
+                                <ol>
+                                    <li>Desligue e desconecte o PC</li>
+                                    <li>Abra o gabinete lateralmente</li>
+                                    <li>Fotografe antes da limpeza</li>
+                                    <li>Use ar comprimido nas ventoinhas</li>
+                                    <li>Limpe filtros de poeira</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 3: Cronograma Pessoal</h5>
+                                <ol>
+                                    <li>Crie calendário de manutenção</li>
+                                    <li>Defina tarefas semanais</li>
+                                    <li>Programe tarefas mensais</li>
+                                    <li>Agende manutenção anual</li>
+                                    <li>Configure lembretes no celular</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 4: Teste de Performance</h5>
+                                <ol>
+                                    <li>Meça tempo de boot antes da limpeza</li>
+                                    <li>Execute benchmark de CPU</li>
+                                    <li>Teste velocidade de disco</li>
+                                    <li>Repita testes após manutenção</li>
+                                    <li>Compare resultados</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 5: Documentação</h5>
+                                <ol>
+                                    <li>Crie log de manutenção</li>
+                                    <li>Anote datas de limpeza</li>
+                                    <li>Registre temperaturas históricas</li>
+                                    <li>Documente problemas encontrados</li>
+                                    <li>Mantenha histórico de upgrades</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 6: Prevenção</h5>
+                                <ol>
+                                    <li>Avalie ambiente do PC (poeira, umidade)</li>
+                                    <li>Considere filtros adicionais</li>
+                                    <li>Otimize posição do gabinete</li>
+                                    <li>Verifique ventilação do ambiente</li>
+                                    <li>Planeje melhorias futuras</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aula11" class="mb-5">
+            <h2 class="section-title"><span class="lesson-badge">Aula 11</span> Diagnóstico de Problemas</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Problemas Comuns</h3>
+                    <div class="accordion" id="problemsAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#noboot">
+                                    PC não liga
+                                </button>
+                            </h2>
+                            <div id="noboot" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Verifique conexão da fonte</li>
+                                        <li>Teste botão power</li>
+                                        <li>Reencaixe RAM</li>
+                                        <li>Teste fonte com clipe</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Ferramentas de Diagnóstico</h3>
+                    <ul>
+                        <li><strong>Memtest86:</strong> Teste de RAM</li>
+                        <li><strong>CrystalDiskInfo:</strong> Saúde do HD/SSD</li>
+                        <li><strong>Prime95:</strong> Teste de CPU</li>
+                        <li><strong>FurMark:</strong> Teste de GPU</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Exercícios Aula 11 -->
+            <div class="mt-5">
+                <h3>🎯 Exercícios Práticos - Aula 11</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 1: Diagnóstico de Hardware</h5>
+                                <ol>
+                                    <li>Baixe e execute CrystalDiskInfo</li>
+                                    <li>Verifique saúde de todos os discos</li>
+                                    <li>Execute Memtest86 por 1 passada</li>
+                                    <li>Use Prime95 para teste de CPU</li>
+                                    <li>Documente todos os resultados</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 2: Simulação de Problemas</h5>
+                                <ol>
+                                    <li>Simule: PC liga mas não dá vídeo</li>
+                                    <li>Liste possíveis causas</li>
+                                    <li>Crie sequencia de testes</li>
+                                    <li>Pratique procedimentos</li>
+                                    <li>Documente soluções</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 3: Análise de Logs</h5>
+                                <ol>
+                                    <li>Abra Visualizador de Eventos</li>
+                                    <li>Analise erros críticos recentes</li>
+                                    <li>Pesquise códigos de erro online</li>
+                                    <li>Identifique padrões de problemas</li>
+                                    <li>Anote soluções encontradas</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 4: Kit de Ferramentas</h5>
+                                <ol>
+                                    <li>Crie pasta com ferramentas de diagnóstico</li>
+                                    <li>Baixe Memtest86, CrystalDiskInfo, etc.</li>
+                                    <li>Crie USB com ferramentas portáteis</li>
+                                    <li>Teste todas as ferramentas</li>
+                                    <li>Documente uso de cada uma</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 5: Troubleshooting Metodológico</h5>
+                                <ol>
+                                    <li>Crie checklist de diagnóstico</li>
+                                    <li>Pratique isolamento de componentes</li>
+                                    <li>Teste método de substituição</li>
+                                    <li>Documente cada etapa</li>
+                                    <li>Crie guia de referência rápida</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 6: Casos Práticos</h5>
+                                <ol>
+                                    <li>Estude 5 casos reais de problemas</li>
+                                    <li>Analise sintomas e soluções</li>
+                                    <li>Crie base de conhecimento pessoal</li>
+                                    <li>Pratique explicação para leigos</li>
+                                    <li>Desenvolva habilidades de comunicação</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aula12" class="mb-5">
+            <h2 class="section-title"><span class="lesson-badge">Aula 12</span> Segurança e Otimização</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5>🔒 Segurança Digital</h5>
+                            <ul>
+                                <li><strong>Antivírus:</strong> Windows Defender + Malwarebytes</li>
+                                <li><strong>Firewall:</strong> Sempre ativo</li>
+                                <li><strong>Backup:</strong> 3-2-1 (3 cópias, 2 mídias, 1 externa)</li>
+                                <li><strong>2FA:</strong> Sempre que possível</li>
+                                <li><strong>Senhas:</strong> Gerenciador como Bitwarden</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5>⚡ Otimização</h5>
+                            <ul>
+                                <li><strong>Startup:</strong> Desative programas desnecessários</li>
+                                <li><strong>Limpeza:</strong> Use CCleaner</li>
+                                <li><strong>SSD:</strong> Ative TRIM</li>
+                                <li><strong>RAM:</strong> 16GB+ recomendado</li>
+                                <li><strong>Drivers:</strong> Sempre atualizados</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="alert alert-success mt-4">
+                <h4 class="alert-heading">🎉 Parabéns! Curso Completo!</h4>
+                <p>Você completou todas as 12 aulas com <strong>72 exercícios práticos</strong>! Agora você é capaz de:</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="mb-0">
+                            <li>✅ Identificar e especificar componentes</li>
+                            <li>✅ Montar computadores do zero</li>
+                            <li>✅ Configurar BIOS/UEFI avançada</li>
+                            <li>✅ Instalar sistemas operacionais</li>
+                            <li>✅ Gerenciar drivers profissionalmente</li>
+                            <li>✅ Realizar manutenção preventiva</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="mb-0">
+                            <li>✅ Diagnosticar problemas complexos</li>
+                            <li>✅ Implementar segurança digital</li>
+                            <li>✅ Otimizar performance do sistema</li>
+                            <li>✅ Planejar upgrades e orçamentos</li>
+                            <li>✅ Documentar processos técnicos</li>
+                            <li>✅ Resolver problemas metodicamente</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="mb-0"><strong>🚀 Próximos Passos:</strong> Considere certificações como CompTIA A+, pratique com projetos reais e mantenha-se atualizado com as novidades tecnológicas!</p>
+            </div>
+            
+            <!-- Exercícios Aula 12 -->
+            <div class="mt-5">
+                <h3>🎯 Exercícios Práticos - Aula 12</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 1: Auditoria de Segurança</h5>
+                                <ol>
+                                    <li>Verifique status do Windows Defender</li>
+                                    <li>Analise configurações do firewall</li>
+                                    <li>Revise programas instalados</li>
+                                    <li>Verifique atualizações pendentes</li>
+                                    <li>Teste backup automático</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 2: Configuração de Backup</h5>
+                                <ol>
+                                    <li>Configure backup do Windows</li>
+                                    <li>Teste restauração de arquivos</li>
+                                    <li>Configure sincronização na nuvem</li>
+                                    <li>Crie ponto de restauração manual</li>
+                                    <li>Documente estratégia 3-2-1</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 3: Otimização de Startup</h5>
+                                <ol>
+                                    <li>Abra Gerenciador de Tarefas &gt; Inicializar</li>
+                                    <li>Identifique programas desnecessários</li>
+                                    <li>Desative programas com alto impacto</li>
+                                    <li>Meça tempo de boot antes/depois</li>
+                                    <li>Documente melhorias obtidas</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 4: Gerenciamento de Senhas</h5>
+                                <ol>
+                                    <li>Instale gerenciador de senhas (Bitwarden)</li>
+                                    <li>Importe senhas existentes</li>
+                                    <li>Gere senhas fortes para contas importantes</li>
+                                    <li>Ative 2FA onde possível</li>
+                                    <li>Teste recuperação de conta</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 5: Limpeza e Otimização</h5>
+                                <ol>
+                                    <li>Execute Limpeza de Disco nativa</li>
+                                    <li>Use CCleaner para limpeza avançada</li>
+                                    <li>Desfragmente HDs (não SSDs)</li>
+                                    <li>Otimize SSDs (comando TRIM)</li>
+                                    <li>Meça ganhos de performance</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5>Exercício 6: Plano Completo</h5>
+                                <ol>
+                                    <li>Crie plano de manutenção mensal</li>
+                                    <li>Configure backup automático</li>
+                                    <li>Estabeleça rotina de segurança</li>
+                                    <li>Documente todas as configurações</li>
+                                    <li>Crie guia de emergência pessoal</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-success mt-4">
+                    <h4>🎆 Projeto Final</h4>
+                    <p><strong>Desafio Completo:</strong> Configure um PC do zero seguindo todos os passos aprendidos:</p>
+                    <ol>
+                        <li>Planeje configuração de hardware com orçamento</li>
+                        <li>Simule montagem completa (ou faça se possível)</li>
+                        <li>Configure BIOS otimizada</li>
+                        <li>Instale Windows com partições adequadas</li>
+                        <li>Instale todos os drivers na ordem correta</li>
+                        <li>Configure segurança e backup</li>
+                        <li>Implemente plano de manutenção</li>
+                        <li>Documente todo o processo</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <p>© 2023 Apostila de Informática. Material educativo completo.</p>
+            <p class="mb-0">Continue praticando e explorando o mundo da tecnologia! 💻</p>
+        </div>
+    </footer>
+
+    <script src="./Apostila de Informática - modulo manutenção_files/bootstrap.bundle.min.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
